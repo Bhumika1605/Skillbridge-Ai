@@ -172,7 +172,7 @@ function ResumeAnalyzer() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/analyze-resume",
+            "https://skillbridge-ai-backend-78l7.onrender.com/api/analyze-resume",
             {
               method: "POST",
               body: formData,
