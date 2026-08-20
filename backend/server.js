@@ -3,7 +3,9 @@ import cors from "cors";
 import multer from "multer";
 import mammoth from "mammoth";
 import dotenv from "dotenv";
-import { PDFParse } from "pdf-parse";
+import pkg from "pdf-parse";
+
+const { PDFParse } = pkg;
 
 dotenv.config();
 
@@ -635,6 +637,7 @@ const ROLE_KEYWORDS = {
   ],
 
   "Civil Engineer": [
+
     "civil engineer",
     "civil engineering",
     "construction",
